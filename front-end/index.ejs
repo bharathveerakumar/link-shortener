@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome to URL Shortener</h1>
+        <h4>Paste the Lengthy URL and get the Short one</h4>
+    </div>
+    <form action="/link" method="POST">
+        <label><h2>Paste the link here</h2></label><br>
+        <input type="text" placeholder="Enter or paste the lenghty link" name="link"> <br>
+        <button type="submit">Submit</button>
+    </form>
+    <br><br>
+    <h1>The Shortened Link is <br> <a href="/<%= id %>" target="_blank">localhost:5000/<%= id %></a></h1>
+</body>
+</html>

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+    text-align: center;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div{
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+form{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+input{
+    width: 50%;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
