@@ -12,7 +12,7 @@ app.set('views', 'front-end')
 app.use(express.static('./front-end/static'))
 
 
-app.listen(process.env.PORT||5000, ()=>console.log('Yes!!!'))
+app.listen(5000, ()=>console.log('Yes!!!'))
 
 
 //inserting the link into DB
@@ -47,3 +47,4 @@ app.get('/:d', async (req, res)=>{
     }
 })
 
+module.exports=app;
