@@ -8,7 +8,7 @@ require('./db.js')
 //middlewares
 app.use(bodyParser.urlencoded({extended:false}))
 app.set('view engine', 'ejs')
-app.set('views', 'front-end')
+app.set('views', __dirname+'/front-end')
 app.use(express.static('./front-end/static'))
 
 
