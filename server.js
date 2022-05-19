@@ -10,9 +10,10 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.set('view engine', 'ejs')
 app.set('views', __dirname+'/front-end')
 app.use(express.static('./front-end/static'))
+require('dotenv').config()
 
 
-app.listen(5000, ()=>console.log('Yes!!!'))
+app.listen(process.env.PORT||5000, ()=>console.log('Yes!!!'))
 
 
 //inserting the link into DB
